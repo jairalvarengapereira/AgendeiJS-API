@@ -1,0 +1,35 @@
+INSERT INTO admins (name, email, password) VALUES
+('John Doe', 'john.doe@example.com', 'password123'),
+('Jane Smith', 'jane.smith@example.com', 'securepassword'),
+('Alice Johnson', 'alice.johnson@example.com', 'alicepass');
+
+INSERT INTO doctors (name, specialty, icon) VALUES
+('Dr. Gregory House', 'Medicina Diagnóstica', 'M'),
+('Dr. Meredith Grey', 'Cirurgia Geral', 'F'),
+('Dr. Derek Shepherd', 'Neurocirurgia', 'M'),
+('Dr. Miranda Bailey', 'Pediatria', 'F');
+
+INSERT INTO services (description) VALUES
+('Medicina Diagnóstica'),
+('Cirurgia Geral'),
+('Neurocirurgia'),
+('Pediatria');
+
+INSERT INTO users (name, email, password) VALUES
+('Carlos Oliveira', 'carlos.oliveira@example.com', 'carlospass'),
+('Mariana Souza', 'mariana.souza@example.com', 'maripass'),
+('Fernanda Lima', 'fernanda.lima@example.com', 'fernandapass'),
+('Pedro Santos', 'pedro.santos@example.com', 'pedropass');
+
+INSERT INTO appointments (id_doctor, id_service, id_user, booking_date, booking_hour) VALUES
+(1, 1, 1, '2024-12-20', '10:00'),
+(2, 2, 2, '2024-12-21', '11:00'),
+(3, 3, 3, '2024-12-22', '14:00'),
+(4, 4, 4, '2024-12-23', '09:00');
+
+INSERT INTO doctors_services (id_doctor, id_service, price) VALUES
+(1, 1, 300.00),
+(2, 2, 1500.00),
+(3, 3, 50.00),
+(4, 4, 200.00),
+(4, 5, 250.00);
